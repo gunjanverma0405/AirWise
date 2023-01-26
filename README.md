@@ -15,4 +15,4 @@ Link for the video: https://drive.google.com/file/d/1Ayvob4vl5mo10hoXJBeva4OYsW0
 
 <img src="./demo/image-3.jpeg" width="200" height="400" />
 
-<img src="./demo/image-4.png" width="200" height="400" />
+<img src="./demo/image-4.png" width="500" height="200" />
