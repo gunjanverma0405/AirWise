@@ -58,7 +58,7 @@ class FirebaseAuthMethods {
         context: context,
         builder: (BuildContext context) => AlertDialog(
           title: const Text('Login'),
-          content: const Text('Logged up successfully'),
+          content: const Text('Logged in successfully'),
           actions: <Widget>[
             TextButton(
               onPressed: () => Navigator.pop(context, 'Cancel'),
