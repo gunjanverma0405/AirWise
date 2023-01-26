@@ -1,16 +1,18 @@
-# loginapp
+# Portfolio-App
 
-A new Flutter project.
+#Video for the demonstration of the app:
 
-## Getting Started
+Link for the video: https://drive.google.com/file/d/1Ayvob4vl5mo10hoXJBeva4OYsW0d8mQ5/view?usp=sharing
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+#Screenshot of App:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="./Demo/image-1.png" width="200" height="400" />
+
+
+<img src="./Demo/image-2.png" width="200" height="400" />
+
+<img src="./Demo/image-3.png" width="200" height="400" />
+
+<img src="./Demo/image-4.png" width="200" height="400" />
