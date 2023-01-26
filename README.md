@@ -8,11 +8,11 @@ Link for the video: https://drive.google.com/file/d/1Ayvob4vl5mo10hoXJBeva4OYsW0
 #Screenshot of App:
 
 
-<img src="./Demo/image-1.png" width="200" height="400" />
+<img src="./demo/image-1.jpeg" width="200" height="400" />
 
 
-<img src="./Demo/image-2.png" width="200" height="400" />
+<img src="./demo/image-2.jpeg" width="200" height="400" />
 
-<img src="./Demo/image-3.png" width="200" height="400" />
+<img src="./demo/image-3.jpeg" width="200" height="400" />
 
-<img src="./Demo/image-4.png" width="200" height="400" />
+<img src="./demo/image-4.png" width="200" height="400" />
