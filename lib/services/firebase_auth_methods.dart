@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:loginapp/utils/showSnackBar.dart';
 
+import '../utils/routes.dart';
+
 class FirebaseAuthMethods {
   final FirebaseAuth _auth;
   FirebaseAuthMethods(this._auth);
@@ -18,23 +20,24 @@ class FirebaseAuthMethods {
         password: password,
       );
       await sendEmailVerification(context);
-      await showDialog<String>(
-        context: context,
-        builder: (BuildContext context) => AlertDialog(
-          title: const Text('Sign up'),
-          content: const Text('Signed up successfully'),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'Cancel'),
-              child: const Text('Cancel'),
-            ),
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'OK'),
-              child: const Text('OK'),
-            ),
-          ],
-        ),
-      );
+      // await showDialog<String>(
+      //   context: context,
+      //   builder: (BuildContext context) => AlertDialog(
+      //     title: const Text('Sign up'),
+      //     content: const Text('Signed up successfully'),
+      //     actions: <Widget>[
+      //       TextButton(
+      //         onPressed: () => Navigator.pop(context, 'Cancel'),
+      //         child: const Text('Cancel'),
+      //       ),
+      //       TextButton(
+      //         onPressed: () => Navigator.pop(context, 'OK'),
+      //         child: const Text('OK'),
+      //       ),
+      //     ],
+      //   ),
+      // );
+      await Navigator.pushNamed(context, MyRoutes.loginRoute);
     } on FirebaseAuthException catch (e) {
       showSnackBar(context, e.message!);
     }
@@ -54,23 +57,24 @@ class FirebaseAuthMethods {
       if (!_auth.currentUser!.emailVerified) {
         await sendEmailVerification(context);
       }
-      await showDialog<String>(
-        context: context,
-        builder: (BuildContext context) => AlertDialog(
-          title: const Text('Login'),
-          content: const Text('Logged in successfully'),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'Cancel'),
-              child: const Text('Cancel'),
-            ),
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'OK'),
-              child: const Text('OK'),
-            ),
-          ],
-        ),
-      );
+      // await showDialog<String>(
+      //   context: context,
+      //   builder: (BuildContext context) => AlertDialog(
+      //     title: const Text('Login'),
+      //     content: const Text('Logged in successfully'),
+      //     actions: <Widget>[
+      //       TextButton(
+      //         onPressed: () => Navigator.pop(context, 'Cancel'),
+      //         child: const Text('Cancel'),
+      //       ),
+      //       TextButton(
+      //         onPressed: () => Navigator.pop(context, 'OK'),
+      //         child: const Text('OK'),
+      //       ),
+      //     ],
+      //   ),
+      // );
+      await Navigator.pushNamed(context, MyRoutes.homeRoute);
     } on FirebaseAuthException catch (e) {
       showSnackBar(context, e.message!);
     }

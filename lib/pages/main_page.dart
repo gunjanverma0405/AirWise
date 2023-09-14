@@ -41,24 +41,25 @@ class _MainPageState extends State<MainPage> {
                       onPressed: () async {
                         await FirebaseAuthMethods.signInWithGoogle(
                             context: context);
-                        await showDialog<String>(
-                          context: context,
-                          builder: (BuildContext context) => AlertDialog(
-                            title: const Text('Google sign in'),
-                            content: const Text('Signed in successfully'),
-                            actions: <Widget>[
-                              TextButton(
-                                onPressed: () =>
-                                    Navigator.pop(context, 'Cancel'),
-                                child: const Text('Cancel'),
-                              ),
-                              TextButton(
-                                onPressed: () => Navigator.pop(context, 'OK'),
-                                child: const Text('OK'),
-                              ),
-                            ],
-                          ),
-                        );
+                        // await showDialog<String>(
+                        //   context: context,
+                        //   builder: (BuildContext context) => AlertDialog(
+                        //     title: const Text('Google sign in'),
+                        //     content: const Text('Signed in successfully'),
+                        //     actions: <Widget>[
+                        //       TextButton(
+                        //         onPressed: () =>
+                        //             Navigator.pop(context, 'Cancel'),
+                        //         child: const Text('Cancel'),
+                        //       ),
+                        //       TextButton(
+                        //         onPressed: () => Navigator.pop(context, 'OK'),
+                        //         child: const Text('OK'),
+                        //       ),
+                        //     ],
+                        //   ),
+                        // );
+                        Navigator.pushNamed(context, MyRoutes.homeRoute);
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
